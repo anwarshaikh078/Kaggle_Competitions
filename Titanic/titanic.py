@@ -25,7 +25,5 @@ print("Predictions ")
 print(type(predictions))
 print("IDS")
 print(ids)
-results = ids.assign(Survived = predictions) # assign predictions to ids
+results = ids.assign(Survived = predictions) 
 results.to_csv("titanic-results.csv", index=False)
-#results = ids.assign(predictions) # assign predictions to ids
-#results.to_csv("titanic-results.csv", index=False)
